@@ -23,4 +23,4 @@ def ststs():
 	return render_template('stats.html')
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
