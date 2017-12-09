@@ -3,6 +3,8 @@ Old High German corpora
 
 Прогресс:
 
-12/07 : Flask app, menu bar, tooltip css
+12/07 : Flask app, menu bar
 
-12/08 : http://dkbrz.pythonanywhere.com/ - текущий вариант, начало
+12/08 : http://dkbrz.pythonanywhere.com/ - страница, куда буду выкладывать текущую версию
+
+12/09 : работаю над bootstrap - есть ошибка при выкладывании на сервер, пытаюсь исправить, думаю над структурой данных для хранения текстов с разметкой
