@@ -19,7 +19,7 @@ def texts():
 	return render_template('texts.html')
 
 @app.route('/stats')
-def ststs():
+def stats():
 	return render_template('stats.html')
 
 if __name__ == '__main__':
