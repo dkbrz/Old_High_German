@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<!-- Подключаем Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- Подключаем стили темы Bootstrap (если нужно) -->
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<!-- Подключаем скрипты Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-    <title>OHG Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="/css/dopstyle.css" rel="stylesheet" media="screen"> 
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Old High German</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/search">Search</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/texts">Texts</a>
-          </li>
-		  <li class="nav-item active">
-            <a class="nav-link" href="/stats">Stats</a>
-          </li>
-        </ul>
+<html lang="en">
+<head>
+  <title>OHG Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<a class="navbar-brand" href="/">Old High German</a>
+			</div>
+		<ul class="nav navbar-nav">
+			<li><a href="/">Home</a></li>
+			<li class="active"><a href="/search">Search</a></li>
+			<li><a href="/texts">Texts</a></li>
+			<li><a href="/stats">Stats</a></li>
+		</ul>
+		</div>
+	</nav>
+	
+	<form class="form-horizontal" action="/">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Word:</label>
+      <div class="col-sm-6">
+        <input type="word" class="form-control" id="email" placeholder="Enter word" name="word">
       </div>
-    </nav>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-6">
+        <button type="submit" class="btn btn-default">Search</button>
+      </div>
+    </div>
+  </form>
   </body>
 </html>

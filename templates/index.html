@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<meta charset="utf-8">
-	<!-- Подключаем Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- Подключаем стили темы Bootstrap (если нужно) -->
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<!-- Подключаем скрипты Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-    <title>OHG Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/dopstyle.css" rel="stylesheet" media="screen"> 
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+<html lang="en">
+<head>
+  <title>OHG Main</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
       <a class="navbar-brand" href="/">Old High German</a>
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/search">Search</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/texts">Texts</a>
-          </li>
-		  <li class="nav-item active">
-            <a class="nav-link" href="/stats">Stats</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/search">Search</a></li>
+      <li><a href="/texts">Texts</a></li>
+      <li><a href="/stats">Stats</a></li>
+    </ul>
+  </div>
+</nav>
   </body>
 </html>
