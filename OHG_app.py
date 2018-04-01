@@ -38,6 +38,10 @@ def stats():
 def about():
 	return render_template('about.html')
 
+@app.route('/glossen')
+def glossen():
+	return render_template('glossen.html')
+
 if __name__ == '__main__':
     app.run()
 	#app.run(debug=True)
