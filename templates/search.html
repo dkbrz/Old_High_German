@@ -1,19 +1,29 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form class="form-horizontal" action="/">
+<form class="form-horizontal" action="/search">
     <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Word:</label>
-      <div class="col-sm-6">
-        <input type="word" class="form-control" id="email" placeholder="Enter word" name="word">
+      <label class="control-label col-sm-1" for="email">Words:</label>
+      <div class="col-sm-5">
+        <input type="word" class="form-control" id="email" placeholder="Enter words" name="word">
+      </div>
+	<label class="control-label col-xs-1" for="email">Begin:</label>
+      <div class="col-xs-1">
+	<input type="word" class="form-control" id="email" placeholder="On the left" name="begin">
+      </div>
+	<label class="control-label col-xs-1" for="email">End:</label>
+      <div class="col-xs-1">
+        <input type="word" class="form-control" id="email" placeholder="On the right" name="end">
       </div>
     </div>
 
     <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-6">
+      <div class="col-sm-offset-1 col-sm-6">
         <button type="submit" class="btn btn-default">Search</button>
       </div>
     </div>
   </form>
+
+{{text | safe}}
 
 {% endblock %}
